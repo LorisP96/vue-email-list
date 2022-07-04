@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <ul id="app">
-        <li v-for="email in emailArray">
-            <div> {{ email }} </div>
-        </li>
-    </ul>
+    <div id="app">
+        <ul v-if="emailArray.length === 10">
+            <li v-for="email in emailArray">
+                <div> {{ email }} </div>
+            </li>
+        </ul>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
